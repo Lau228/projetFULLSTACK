@@ -1,0 +1,123 @@
+<html lang="fr"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mix & Wear</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Mix & Wear</h1>
+            <p>Créez vos tenues idéales !</p>
+        </header>
+
+        <!-- Choix du genre -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <div class="gender-selection">
+    <h2>Choisissez votre genre <i class="fas fa-user-friends"></i></h2>
+    <button onclick="setGender('Homme')">Homme <i class="fas fa-male"></i></button>
+    <button onclick="setGender('Femme')">Femme <i class="fas fa-female"></i></button>
+</div>
+<div class="mood-selection">
+    <h2>Quelle est votre humeur ?</h2>
+    <form id="moodForm">
+        <label>
+            <input type="radio" name="mood" value="heureux" required> Heureux
+        </label>
+        <label>
+            <input type="radio" name="mood" value="triste"> Triste
+        </label>
+        <label>
+            <input type="radio" name="mood" value="décontracté"> Décontracté
+        </label>
+        <label>
+            <input type="radio" name="mood" value="sportif"> Sportif
+        </label>
+        <button type="submit">Voir les articles</button>
+    </form>
+</div>
+<div id="articlesContainer" class="selection-section">
+    <h2>Articles suggérés :</h2>
+    <!-- Les articles seront ajoutés ici par JavaScript -->
+</div>
+        <!-- Aperçu de la tenue -->
+        <div class="preview-section">
+            <h2>Aperçu de la tenue</h2>
+            <div id="preview" class="preview-box">Aucune pièce sélectionnée.</div>
+        </div>
+
+        <!-- Sélection des pièces de vêtements -->
+        <div class="selection-section">
+            <h2>Choisissez vos pièces</h2>
+
+            <!-- Section Hauts -->
+            <div class="category" id="category-hauts">
+                <h3>Hauts</h3>
+                <div class="subcategory">
+                    <h4>Chemises</h4>
+                    <div class="clothing-item" onclick="selectItem('Chemise 1')">Chemise 1</div>
+                    <div class="clothing-item" onclick="selectItem('Chemise 2')">Chemise 2</div>
+                </div>
+                <div class="subcategory">
+                    <h4>T-shirts</h4>
+                    <div class="clothing-item" onclick="selectItem('T-shirt 1')">T-shirt 1</div>
+                    <div class="clothing-item" onclick="selectItem('T-shirt 2')">T-shirt 2</div>
+                </div>
+                <div class="subcategory">
+                    <h4>Sweatshirts</h4>
+                    <div class="clothing-item" onclick="selectItem('Sweatshirt 1')">Sweatshirt 1</div>
+                    <div class="clothing-item" onclick="selectItem('Sweatshirt 2')">Sweatshirt 2</div>
+                </div>
+                <!-- Ajoute plus de sous-catégories comme Pulls, Tops, etc. -->
+            </div>
+
+            <!-- Section Bas -->
+            <div class="category" id="category-bas">
+                <h3>Bas</h3>
+                <div class="subcategory">
+                    <h4>Pantalons</h4>
+                    <div class="clothing-item" onclick="selectItem('Pantalon 1')">Pantalon 1</div>
+                    <div class="clothing-item" onclick="selectItem('Pantalon 2')">Pantalon 2</div>
+                </div>
+                <div class="subcategory">
+                    <h4>Jeans</h4>
+                    <div class="clothing-item" onclick="selectItem('Jean 1')">Jean 1</div>
+                    <div class="clothing-item" onclick="selectItem('Jean 2')">Jean 2</div>
+                </div>
+                <!-- Ajoute plus de sous-catégories comme Shorts, Jupes, etc. -->
+            </div>
+
+            <!-- Section Accessoires -->
+            <div class="category" id="category-accessoires">
+                <h3>Accessoires</h3>
+                <div class="subcategory">
+                    <h4>Lunettes</h4>
+                    <div class="clothing-item" onclick="selectItem('Lunette 1')">Lunette 1</div>
+                    <div class="clothing-item" onclick="selectItem('Lunette 2')">Lunette 2</div>
+                </div>
+                <div class="subcategory">
+                    <h4>Bijoux</h4>
+                    <div class="clothing-item" onclick="selectItem('Bijou 1')">Bijou 1</div>
+                    <div class="clothing-item" onclick="selectItem('Bijou 2')">Bijou 2</div>
+                </div>
+                <!-- Ajoute plus de sous-catégories comme Sacs, Ceintures, etc. -->
+            </div>
+
+            <button class="reset-button" onclick="resetSelection()">Réinitialiser</button>
+        </div>
+    </div>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirection Fun</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="clothing-item">
+        <div class="item-name">T-shirt 1</div>
+        <a href="https://example.com/tshirt1" class="fun-button" target="_blank">Acheter</a>
+    </div>
+</body>
+</html>
